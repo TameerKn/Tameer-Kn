@@ -1,0 +1,132 @@
+*{
+    box-sizing: border-box;
+    margin: 0px;
+    padding: 0px;
+    scroll-behavior: smooth;
+    font-family: heebo;
+    transition: all 1s;
+}
+
+.box{
+    position: absolute;
+    top: 10rem;
+    right: 15rem;
+    width: 570px;
+    height: 650px;
+    padding-top: 5rem;
+    background-color: #1A1A1AD4;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 15px;
+}
+
+#bgImg {
+    width: 100%;
+    height: 570px;
+}
+
+#text {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align:center;
+    width: 500px;
+    gap: 20px;
+}
+
+form div {
+    display: flex;
+    flex-direction: column;
+    margin-top: 10px;
+    }
+
+input{
+    border: none;
+    width: 390px;
+    height: 50px;
+    border: solid 1px #D31C75;
+}
+
+#button {
+   width: 166px;
+   height: 53px;
+   background-color: #D31C75;
+   color: white;
+   font-weight: 600;
+   font-size: 20px;
+   cursor: pointer;
+   transition: all 600ms;
+   margin-top: 10px;
+}
+
+#button:hover {
+    transform: scale(0.93);
+    background-color: #c9327b;
+    color: #740d3f;
+}
+
+@font-face {
+    font-family: heebo;
+    src: url(../fonts/Heebo-Regular.ttf);
+}
+
+@media only screen and (max-width: 950px){
+
+    .box{
+        position: absolute;
+        top: 80px;
+        right: 50px;
+        width: 300px;
+        height: 440px;
+        padding-top: 5rem;
+        background-color: #1A1A1AD4;
+        color: white;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 5px;
+    }
+
+    #text {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        text-align:center;
+        width: 250px;
+        gap: 8px;
+    }
+
+    #text p {
+        font-size: 15px;
+    }
+
+    #text h1 {
+        font-size: 25px ;
+    }
+
+    input{
+        border: none;
+        width: 230px;
+        height: 28px;
+        border: solid 1px #D31C75;
+    }
+
+    #button {
+        width: 77px;
+        height: 34px;
+        background-color: #D31C75;
+        color: white;
+        font-weight: 600;
+        font-size: 15px;
+        cursor: pointer;
+        transition: all 600ms;
+     }
+
+     #bgImg {
+        width: 100%;
+        height: 240px;
+    }
+
+}

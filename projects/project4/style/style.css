@@ -1,0 +1,200 @@
+*{
+    box-sizing: border-box;
+    margin: 0px;
+    padding: 0px;
+    scroll-behavior: smooth;
+    font-family: assistantBold;
+}
+
+.container {
+    height: 100vh;
+    width: 100vw;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 4rem;
+}
+
+section{
+    width: 100vw;
+    height: fit-content;
+}
+
+section img {
+    height: 100%;   
+    width: 100%;
+    object-fit: cover;
+}
+
+.text{
+    position: absolute;
+    top: 25%;
+    left: 25%;
+    right: 25%;
+    height: 20%;
+    text-align: center;
+}
+
+.text h1 {
+    color: #D3E10E;
+    font-size: 3rem;
+}
+
+.text p {
+    color: white;
+    font-family: assistantReg;
+    font-size: 1rem;
+}
+
+.formContainer {
+    margin-top: 1rem;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: end;
+    gap: 1rem;
+}
+
+.formContainer div {
+display: flex;
+flex-direction: column;
+}
+
+.formContainer input {
+    width: 15vw;
+    height: 5vh;
+    background-color: #F6F6F6;
+    border: none;
+    border-bottom: 3px solid #D3E10E;
+}
+
+#button {
+    background-color: #D3E10E;
+    width: 15vw;
+    height: 5vh;
+    transition: all 300ms;
+    border: none;
+}
+
+#button:hover {
+    transform: scale(0.93);
+    background-color: #beca0d;
+    cursor: pointer;
+}
+
+@media (max-width: 1000px) {
+    .text{
+        position: absolute;
+        top: 10%;
+        left: 5%;
+        right: 5%;
+        height: 10%;
+        text-align: center;
+    }
+    .text h1 {
+        color: #D3E10E;
+        font-size: 2rem;
+    }  
+    .text p {
+        color: white;
+        font-family: assistantReg;
+        font-size: 1rem;
+    }
+}
+
+@media (max-width: 950px) {
+    .text{
+        position: absolute;
+        top: 10%;
+        left: 5%;
+        right: 5%;
+        height: 10%;
+        text-align: center;
+    }
+    .text h1 {
+        color: #D3E10E;
+        font-size: 2rem;
+    }  
+    .text p {
+        color: white;
+        font-family: assistantReg;
+        font-size: 1rem;
+    }
+    .formContainer {
+        margin-top: 1rem;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: end;
+        gap: 1rem;
+    }
+    .formContainer input {
+        width: 80vw;
+        height: 5vh;
+        background-color: #F6F6F6;
+        border: none;
+        border-bottom: 3px solid #D3E10E;
+        transition: all 300ms;
+    }
+    
+    #button {
+        background-color: #D3E10E;
+        width: 80vw;
+        height: 5vh;
+        border: none;
+    }
+}
+
+@media (max-width: 700px) {
+    .text{
+        position: absolute;
+        top: 5%;
+        left: 5%;
+        right: 5%;
+        height: 10%;
+        text-align: center;
+    }
+    .text h1 {
+        color: #D3E10E;
+        font-size: 2rem;
+    }  
+    .text p {
+        color: white;
+        font-family: assistantReg;
+        font-size: 1rem;
+    }
+    .formContainer {
+        margin-top: 1rem;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: end;
+        gap: 1rem;
+        font-size: 16rem;
+    }
+    .formContainer input {
+        width: 70vw;
+        height: 5vh;
+        background-color: #F6F6F6;
+        border: none;
+        border-bottom: 3px solid #D3E10E;
+    }
+    
+    #button {
+        background-color: #D3E10E;
+        width: 70vw;
+        height: 5vh;
+        transition: all 300ms;
+        border: none;
+    }
+}
+
+@font-face {
+    font-family: assistantReg;
+    src: url(../fonts/Assistant-Regular.ttf);
+}
+
+@font-face {
+    font-family: assistantBold;
+    src: url(../fonts/Assistant-Bold.ttf);
+}

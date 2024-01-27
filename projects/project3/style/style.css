@@ -1,0 +1,146 @@
+*{
+    box-sizing: border-box;
+    margin: 0px;
+    padding: 0px;
+    scroll-behavior: smooth;
+    font-family: varela;
+}
+
+.container {
+    background: linear-gradient(180deg, #281EFF, #2DFF8C);
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 1rem;
+}
+
+.text{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    color: white;
+    direction: rtl;
+    gap: 20px;
+}
+
+.text h1 {
+    font-family: satisfy;
+    font-size: 6rem;
+    text-shadow: 10px 10px 30px rgb(22, 22, 22);
+    
+}
+
+.text  h3{
+    font-weight: 400;
+    font-size: 1.5rem;
+}
+
+.formContainer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+}
+
+.inputContainer input{
+    display: flex;
+    flex-direction: column;
+    height: 5vh;
+    width: 15vw;
+    border: solid 2px white;
+    background-color: #F6F6F624;
+}
+
+#button {
+    background-color: white;
+    border: none;
+    margin-top: 20px;
+    width: 15vw;
+    height: 5vh;
+    font-family: varela;
+    text-align: center;
+    font-size: 1.2rem;
+    transition: all 800ms;
+}
+
+#button:hover{
+transform: scale(0.93);
+background-color: rgba(255, 255, 255, 0.829);
+cursor: pointer;
+}
+
+@media (max-width: 950px) {
+ 
+ .container {
+        background: linear-gradient(180deg, #281EFF, #2DFF8C);
+        width: 100vw;
+        height: 100vh;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        gap: 1rem;
+}
+.text{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    color: white;
+    direction: rtl;
+    gap: 10px;
+    padding: 1rem;
+}
+.text h1 {
+    font-family: satisfy;
+    font-size: 3rem;
+    text-shadow: 10px 10px 30px rgb(22, 22, 22);
+    
+}
+.text  h3{
+    font-size: 18px;
+}
+.formContainer {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 1vh;
+}
+.inputContainer input{
+    display: flex;
+    flex-direction: column;
+    width: 30vw;
+    height: 5vh;
+    border: solid 2px white;
+    background-color: #F6F6F624;
+    transition: all 800ms;
+}
+#button {
+    background-color: white;
+    border: none;
+    margin-top: 20px;
+    width: 30vw;
+    height: 5vh;
+    font-family: varela;
+    text-align: center;
+    font-size: 1rem;
+    transition: all 800ms;
+}
+
+}
+
+
+@font-face {
+    font-family: varela;
+    src: url(../fonts/VarelaRound-Regular.ttf);
+}
+
+@font-face {
+    font-family: satisfy;
+    src: url(../fonts/Satisfy-Regular.ttf)
+}

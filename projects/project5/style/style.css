@@ -1,0 +1,216 @@
+*{
+    box-sizing: border-box;
+    margin: 0px;
+    padding: 0px;
+    scroll-behavior: smooth;
+    transition: all 500ms;
+}
+
+.container{
+    width: 100vw;
+    height: 100vh;
+}
+
+.top {
+    display: flex;
+    justify-content: space-between;
+}
+
+.whatsAppIcon {
+    width: 60px;
+    height: 60px;
+    background-color: #FDBD03;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 25px;
+    margin-left: 20px;
+    box-shadow: 0px 2px 5px black;
+}
+
+.whatsAppIcon:hover {
+    transform: scale(0.93);
+    background-color: #ecb204;
+    cursor: pointer;
+}
+
+.whatsAppIcon img {
+    width: 1.7vw;
+}
+
+.topBorder {
+    background-color: #FDBD03;
+    width: 22vw;
+    height: 1.7vh;
+}
+
+.main {
+    width: 100vw;
+    height: 76vh;
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    align-items: center;
+}
+
+.title h1 {
+    color: #FDBD03;
+    font-size: 3rem;
+    text-align: right;
+    font-family: heeboBold;
+}
+
+.title p {
+    color: #020253;
+    font-size: 1rem;
+    text-align: right;
+    direction: rtl;
+    font-family: heebo;
+}
+
+.form1 {
+    height: 10vh;
+    display: flex;
+    gap: 1rem;
+    font-family: heeboBold;
+}
+
+.input1 {
+    display: flex;
+    flex-direction: column;
+    direction: rtl;
+}
+
+#name, #email{
+    width: 21.5vw;
+    height: 5vh;
+    border: none;
+    background-color: #e5eeff;
+    border-bottom: 4px solid #FDBD03;
+}
+
+.form2 {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    font-family: heeboBold;
+}
+
+.input2 {
+    display: flex;
+    flex-direction: column;
+    direction: rtl;
+}
+
+#content {
+    width: 44vw;
+    height: 15vh;
+    border: none;
+    background-color: #e5eeff;
+    border-bottom: 4px solid #FDBD03;
+}
+
+#button {
+    border: none;
+    background-color: #FDBD03;
+    width: 165px;
+    height: 50px;
+    font-family: heeboBold;
+    font-size: 1rem;
+}
+
+#button:hover {
+    background-color: #e2ab06;
+    transform: scale(0.93);
+    cursor: pointer;
+}
+
+.main .phoneImg img {
+    width: 220px;
+    height: 300px;
+}
+
+.icons {
+    width: 35vw;
+    height: 13vh;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+.icons .icon {
+    width: 5vw;
+    height: 10vh;
+    background-color: #FDBD03;
+    border-radius: 50%;
+    box-shadow: 0px 2px 5px black;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 2rem;
+}
+
+.icons .icon:hover {
+    transform: scale(0.93);
+    background-color: #ecb204;
+    cursor: pointer;
+}
+
+.bottomBorder {
+    width: 54vw;
+    height: 1.9vh;
+    background-color: #FDBD03;
+}
+
+@media (max-width: 750px){
+    .container{
+        width: 100vw;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    .top {
+        width: 100vw;
+        justify-content: flex-end;
+    }
+    .whatsAppIcon{
+        display: none;
+    }
+    .topBorder{
+        width: 90vw;
+        height: 1.5vh;
+    }
+    .main {
+        height: 800px;
+        flex-direction: column-reverse;
+    }
+    .content{
+        display: flex;
+        flex-direction: column;
+    }
+    .icons {
+        width: 75vw;
+        justify-content: space-evenly;
+    }
+    .icons .icon {
+        width: 12vw;
+        height: 7vh;
+    }
+    .bottomBorder {
+        width: 100vw;
+        height: 1.5vh;
+    }
+
+}
+
+@font-face {
+    font-family: heebo;
+    src: url(../fonts/Heebo-Regular.ttf);
+}
+
+@font-face {
+    font-family: heeboBold;
+    src: url(../fonts/Heebo-Bold.ttf);
+}

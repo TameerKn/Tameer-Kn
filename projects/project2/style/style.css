@@ -1,0 +1,116 @@
+*{
+    box-sizing: border-box;
+    margin: 0px;
+    padding: 0px;
+    scroll-behavior: smooth;
+    font-family: heebo;
+    transition: all 1s;
+}
+
+.container{
+    display: flex;
+    align-items: center;
+}
+
+.imgContainer {
+    display: flex;
+    width: 100vh;
+    height: 100vh;
+}
+
+.imgContainer img {
+    object-fit: cover;
+    width: 100%;
+    height: 100%;
+}
+
+.formContainer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100vh;
+    height: 100vh;
+    background-color: rgb(255, 255, 255);
+}
+
+#text {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 400px;
+    color: #020253;
+    font-weight: 900;
+}
+
+form div {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+#inputId input {
+    border: none;
+    background-color: #E5EEFF;
+    border-bottom: solid 4px #020253;
+    font-size: 20px;
+    font-family: heebo;
+    width: 415px;
+    height: 50px;
+}
+
+#button {
+    width: 166px;
+    height: 53px;
+    background-color: #020253;
+    border: none;
+    color: white;
+    font-weight: 600;
+    font-size: 20px;
+    cursor: pointer;
+    transition: all 600ms;
+    margin-top: 10px;
+    margin-left: 12em;
+}
+
+#button:hover {
+    transform: scale(0.93);
+    background-color: #1f1f86;
+}
+
+@media only screen and (max-width: 950px) {
+    .container{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .imgContainer {
+        display: flex;
+        width: 100%;
+        height: 300px;
+    }
+    
+    .imgContainer img {
+        object-fit: cover;
+        width: 100%;
+        height: 100%;
+    }
+
+    .formContainer {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+        height: 600px;
+        background-color: rgb(255, 255, 255);
+    }
+
+}
+
+@font-face {
+    font-family: heebo;
+    src: url(../fonts/Heebo-Regular.ttf);
+}
+
+
+

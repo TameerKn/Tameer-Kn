@@ -1,0 +1,304 @@
+*{
+    box-sizing: border-box;
+    margin: 0px;
+    padding: 0px;
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: khula;
+    background-color: rgb(100, 122, 182);
+    color: azure;
+}
+
+header {
+    position: sticky;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 75px;
+    background-color: rgba(99, 129, 212, 0.726);
+    backdrop-filter: blur(7px);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 99999999;
+    box-shadow: 1px 1px 5px 1px rgb(36, 46, 75);
+}
+
+.logoContainer {
+    transition: all 0.5s;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    animation: 1.7s animation;
+    padding-left: 5em;
+    margin-bottom: 10px;
+}
+
+.logoContainer:hover, .logoContainer:hover a, .logoContainer:hover h1 {
+    transform: scaleX(0.95) scaleY(0.95);
+    cursor: pointer;
+    transition: all 0.5s;
+    color: rgb(37, 88, 129);
+}
+
+.logoContainer h1, .logoContainer a{
+    color: azure;
+    padding-top: 15px;
+    text-decoration: none;
+}
+
+#logo{
+    width: auto;
+    height: 70px;
+    margin-bottom: -10px;
+}
+
+@keyframes animation {
+    0% {
+        transform: scaleX(0.7) scaleY(0.7);
+        opacity: 0;
+    }
+    100% {
+        transform: scaleX(1) scaleY(1);
+        opacity: 1;
+    }
+  }
+
+.navBar{
+    align-items: center;
+    margin-top: 10px;
+    padding-right: 8em;
+}
+
+@media only screen and (max-width: 920px){
+
+    #navMenu a{
+        display: none;
+    }
+
+    #checkBtn:checked ~ #navMenu {
+        position: absolute;
+        background-color: rgba(100, 122, 182, 0.979);
+        top: 100%;
+        left: 0;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+        height: 200px;
+        animation: 1.7s animation;
+        transition: all 0.7s ease-in-out;
+        box-shadow: 1px 1px 5px rgb(36, 46, 75);
+    }
+
+    #checkBtn:checked ~ #navMenu a {
+        text-decoration: none;
+        font-weight: 700;
+        font-size: 24px;
+        font-family: khula;
+        line-height: 50px;
+        padding-right: 55px;
+        color: azure;
+        text-align: center;
+        display: block;
+    }
+
+    #checkBtn:checked ~ #navMenu a:hover {
+        color: rgb(37, 88, 129);
+        font-size: 22px;
+    }
+
+    .navBar #hamburger{
+        display: inline-flex;
+    }
+
+    #checkBtn:checked ~ label #hamburger {
+        display: none;
+    }
+
+    #checkBtn:checked ~ label #cancel {
+        display: inline-flex;
+    }
+
+}
+
+label #hamburger,
+label #cancel {
+    font-size: 30px;
+    cursor: pointer;
+    display: none;
+    transition: all 0.3s;
+}
+
+#hamburger:hover, #cancel:hover {
+    transform: scale(0.93);
+    color: rgb(37, 88, 129);
+}
+
+#checkBtn {
+    display: none;
+}
+
+#navMenu a{
+    text-decoration: none;
+    font-weight: 700;
+    font-size: 24px;
+    font-family: khula;
+    margin-left: 55px;
+    color: azure;
+    transition: all 0.5s;
+}
+
+#navMenu a:hover {
+    color: rgb(37, 88, 129);
+    font-size: 22px;
+}       
+
+#main{
+    display: flex;
+    background-image: url(../images/background2.jpg);
+    background-size: cover;
+    width: 100%;
+    height: 450px;
+    justify-content: center;
+    align-items: center;
+    scroll-behavior: smooth;
+}
+
+#main button{
+    color: azure;
+    background-color: rgb(99, 129, 212);
+    border: 2.5px solid rgb(92, 119, 196);
+    text-decoration: none;
+    font-family: khula;
+    font-weight: 500;
+    font-size: 16px;
+    padding-right: 13px;
+    padding-left: 13px;
+    padding-top: 4px;
+    margin-top: 10px;
+    cursor: pointer;
+    animation: 1.7s animation;
+}
+
+#main button a {
+    color: azure;
+}
+
+#main button:hover, #main button a:hover{
+    transform: scale(0.93);
+    color: rgb(37, 88, 129);
+    background-color: rgb(112, 139, 214);
+    transition: all 0.7s;
+}
+
+.textContainer{
+    max-width: 50%;
+    font-family: khula;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.btnsContainer {
+}
+
+#spanTxt {
+    transition: all 1s;
+}
+
+#spanTxt:hover {
+    transition: all 0.5s;
+    cursor: pointer;
+    color: rgb(37, 88, 129);
+    font-size: 23px;
+}
+
+
+@keyframes scaleAnimation {
+    0% {
+      transform: scale(0.5);
+      opacity: 0;
+    }
+    50% {
+      transform: scale(1.2);
+      opacity: 1;
+    }
+    100% {
+      transform: scale(1);
+      opacity: 1;
+    }
+  }
+
+#text{
+    line-height: 18px;
+    font-size: 16px;
+    font-weight: 500;
+}
+
+.divider{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    width: 100%;
+    height: 100px;
+    background-color: rgb(99, 129, 212);
+    box-shadow: 1px 1px 5px 1px rgb(36, 46, 75);
+}
+
+.divider img {
+    margin-top: 10px;
+    transition: all 700ms;
+    cursor: pointer;
+    animation: 1.7s scaleAnimation;
+}
+
+.divider img:hover {
+    transform: scale(1.15);
+}
+
+.imgContainer {
+    width: 100%;
+    height: 700px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.projectImg {
+    width: 60%;
+    height: 600px;
+}
+
+.projectImg img {
+    border-radius: 3px;
+    box-shadow: 1px 1px 5px 1px rgb(36, 46, 75);
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.copyrightDiv {
+    height: 30px;
+    width: 100%;
+    background-color: rgb(44, 44, 48);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-left: 5px;
+    padding-right: 5px;
+}
+
+@media (max-width: 700px) {
+    .projectImg {
+        width: 80vw;
+        height: 50vh;
+    }
+}
+
+@font-face {
+    font-family: khula;
+    src: url(../fonts/Khula-Regular.ttf);
+}

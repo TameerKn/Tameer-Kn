@@ -74,6 +74,10 @@ header {
 
 @media only screen and (max-width: 920px){
 
+    header{
+        height: 10vh;
+    }
+
     #navMenu a{
         display: none;
     }
@@ -305,7 +309,6 @@ label #cancel {
 
 .aboutBox{
     width: 30%;
-    min-width: 500px;
     height: 525px;
     border: 3px solid rgb(79, 102, 167);
     background-color: rgb(115, 139, 206);
@@ -588,9 +591,20 @@ label #cancel {
 }
 
 @media (max-width: 1220px) {
-    .projectsBox {
+   /* .projectsBox {
         max-width: 460px;
         min-height: 2800px;
+    }*/
+    header{
+        height: 10vh;
+    }
+    .projectsBox{
+        width: 80vw;
+        height: 320vh;
+    }
+    .projectsBox h3{
+        font-size: 1rem;
+
     }
     .projects {
         height: 2900px;
@@ -630,7 +644,8 @@ label #cancel {
     }
 
     .aboutBox {
-        min-width: 460px;
+        width: 80vw;
+        height: 80vh;
     }
 
 }

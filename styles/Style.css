@@ -651,6 +651,7 @@ label #cancel {
     .projectsBox{
         width: 80vw;
         height: 3100px;
+        gap: 4vh;
     }
     .projects {
         height: 3200px;

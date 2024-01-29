@@ -653,6 +653,9 @@ label #cancel {
         height: 3100px;
         gap: 4vh;
     }
+    .projectsBox div {
+        height: 50vh;
+    }
     .projects {
         height: 3200px;
     }

@@ -650,14 +650,11 @@ label #cancel {
 @media (max-width: 940px) {
     .projectsBox{
         width: 80vw;
-        height: 3100px;
+        height: 2800px;
         gap: 4vh;
     }
-    .projectsBox div {
-        height: 50vh;
-    }
     .projects {
-        height: 3200px;
+        height: 2870px;
     }
     .logoContainer h1 {
         font-size: 1.3rem;

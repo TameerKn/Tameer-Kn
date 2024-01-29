@@ -591,23 +591,19 @@ label #cancel {
 }
 
 @media (max-width: 1220px) {
-   /* .projectsBox {
-        max-width: 460px;
-        min-height: 2800px;
-    }*/
     header{
         height: 10vh;
     }
     .projectsBox{
         width: 80vw;
-        height: 320vh;
+        height: 1400px;
     }
     .projectsBox h3{
         font-size: 1rem;
 
     }
     .projects {
-        height: 2900px;
+        height: 1500px;
     }
 
     #contact {
@@ -645,9 +641,25 @@ label #cancel {
 
     .aboutBox {
         width: 80vw;
-        height: 80vh;
+        height: 580px;
     }
 
+}
+
+@media (max-width: 940px) {
+    .projectsBox{
+        width: 80vw;
+        height: 2780px;
+    }
+    .projects {
+        height: 2840px;
+    }
+    .logoContainer h1 {
+        font-size: 1.3rem;
+    }
+    #contact .formPanel {
+        align-items: start;
+    }
 }
 
 @font-face {

@@ -649,10 +649,10 @@ label #cancel {
 @media (max-width: 940px) {
     .projectsBox{
         width: 80vw;
-        height: 2850px;
+        height: 3100px;
     }
     .projects {
-        height: 2950px;
+        height: 3200px;
     }
     .logoContainer h1 {
         font-size: 1.3rem;

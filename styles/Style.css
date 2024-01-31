@@ -648,7 +648,7 @@ label #cancel {
 }
 
 
-@media only screen and (max-width: 940px) {
+@media (max-width: 940px) {
     .projectsBox{
         width: 80vw;
         height: 2900px;
@@ -656,7 +656,6 @@ label #cancel {
     }
     .projectsBox div{
         height: 440px;
-
     }
     .projects {
         height: 3000px;
@@ -673,6 +672,9 @@ label #cancel {
     .aboutBox {
         height: 650px;
     }
+    .aboutBox p {
+        text-align: start;
+    }
     #contact .sidePanel {
         text-align: center;
     }
@@ -682,7 +684,7 @@ label #cancel {
         min-height: 80%;
     }
     .iconsDiv {
-    justify-content: space-evenly;
+        justify-content: space-evenly;
         margin-top: 15px;
     }
 }

@@ -355,7 +355,7 @@ label #cancel {
     display: flex;
     justify-content: center;
     width: 100%;
-    height: 1020px;
+    height: 1070px;
     background-color: rgb(99, 129, 212);
     box-shadow: 1px 1px 5px 1px rgb(36, 46, 75);
 }
@@ -378,7 +378,7 @@ label #cancel {
     padding-left: 3rem;
     padding-right: 3rem;
     width: 1200px;
-    height: 950px;
+    height: 1000px;
     border: 3px solid rgb(79, 102, 167);
     background-color: rgb(98, 120, 180);
     box-shadow: 1px 1px 5px 1px rgb(36, 46, 75);
@@ -393,7 +393,7 @@ label #cancel {
 .projectsBox div {
     border-radius: 5px;
     width: 300px;
-    height: 405px;
+    height: 430px;
     max-width: 390px;
     background-color: rgb(86, 111, 182);
 }
@@ -597,14 +597,14 @@ label #cancel {
     }
     .projectsBox{
         width: 80vw;
-        height: 1400px;
+        height: 1500px;
     }
     .projectsBox h3{
         font-size: 1rem;
 
     }
     .projects {
-        height: 1500px;
+        height: 1570px;
     }
 
     #contact {
@@ -647,20 +647,38 @@ label #cancel {
 
 }
 
-@media (max-width: 940px) {
+@media (max-width: 940px){
     .projectsBox{
         width: 80vw;
-        height: 2800px;
+        height: 2900px;
         gap: 4vh;
     }
     .projects {
-        height: 2870px;
+        height: 3000px;
     }
     .logoContainer h1 {
         font-size: 1.3rem;
     }
     #contact .formPanel {
         align-items: start;
+    }
+    .projects h3 {
+        font-size: 0.9rem;
+    }
+    .aboutBox {
+        height: 650px;
+    }
+    #contact .sidePanel {
+        text-align: center;
+    }
+    #contact .formPanel {
+        align-items: start;
+        min-width: 100%;
+        min-height: 80%;
+    }
+    .iconsDiv {
+    justify-content: space-evenly;
+        margin-top: 15px;
     }
 }
 

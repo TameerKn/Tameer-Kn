@@ -148,7 +148,7 @@ flex-direction: column;
 @media (max-width: 700px) {
     .text{
         position: absolute;
-        top: 5%;
+        top: 2%;
         left: 5%;
         right: 5%;
         height: 10%;
@@ -170,7 +170,7 @@ flex-direction: column;
         justify-content: center;
         align-items: end;
         gap: 1rem;
-        font-size: 16rem;
+        font-size: 1.6rem;
     }
     .formContainer input {
         width: 70vw;

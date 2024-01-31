@@ -647,11 +647,16 @@ label #cancel {
 
 }
 
-@media (max-width: 940px){
+
+@media only screen and (max-width: 940px) {
     .projectsBox{
         width: 80vw;
         height: 2900px;
-        gap: 4vh;
+        gap: 2.5vh;
+    }
+    .projectsBox div{
+        height: 440px;
+
     }
     .projects {
         height: 3000px;
